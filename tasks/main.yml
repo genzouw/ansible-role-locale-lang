@@ -1,0 +1,11 @@
+- template:
+    src: i18n.j2
+    dest: /etc/sysconfig/i18n
+    owner: root
+    group: root
+    mode: 0664
+  when: ansible_os_family == 'RedHat'
+
+- name: Intall yum packages
+  yum: name=* state=latest
+  when: ansible_os_family == 'RedHat'
