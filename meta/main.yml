@@ -1,2 +1,16 @@
 ---
-dependencies:
+dependencies: []
+
+galaxy_info:
+  author: genzouw
+  description: 'Scrit to setup locale and timezone.'
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.6
+  platforms:
+  - name: EL
+    versions:
+    - all
+  categories:
+    - networking
+    - system
+    - web
