@@ -15,7 +15,3 @@
   when: ansible_os_family == 'RedHat'
 
 - service: name=crond enabled=yes state=restarted
-
-- name: Intall yum packages
-  yum: name=* state=latest
-  when: ansible_os_family == 'RedHat'
